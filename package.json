@@ -1,0 +1,29 @@
+{
+  "name": "eindopdracht-jarithyskdg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCT-Antwerp-Assignments/eindopdracht-jarithyskdg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MCT-Antwerp-Assignments/eindopdracht-jarithyskdg/issues"
+  },
+  "homepage": "https://github.com/MCT-Antwerp-Assignments/eindopdracht-jarithyskdg#readme",
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "remixicon": "^3.3.0",
+    "sass": "^1.62.1"
+  }
+}
