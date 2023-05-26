@@ -63,6 +63,7 @@ header {
                 padding: 12px 0;
                 margin: 0 25px;
                 transition: all 0.5s ease;
+                color: $text-light;
 
                 &:hover {
                     color: $secondary;
@@ -86,7 +87,7 @@ header {
 
         .login-button {
             padding: 6px 24px;
-            border: 2px solid $text-light;
+            border: 1px solid $text-light;
             color: $text-light;
             transition: all 0.5s ease;
             cursor: pointer;
@@ -96,8 +97,7 @@ header {
             }
 
             &:hover {
-                background-color: $secondary;
-                color: $bg-dark;
+                background-color: $primary;
             }
         }
 
@@ -116,93 +116,15 @@ header {
 //Tablet view
 @media (min-width: 768px) {
     header {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        right: 0;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: transparent;
-        padding: 14px 5%;
+        padding: 18px 10%;
         transition: all 0.2s ease;
 
-        .logo {
-            img {
-                height: 60px;
-            }
-        }
-
         .navbar {
-            display: flex;
-            position: absolute;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            top: 100%;
-            right: -100%;
             width: 40%;
-            height: 35vh;
-            background-color: $primary;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            transition: all 0.5s ease;
-
-            li {
-                margin: 0 10px;
-
-                a {
-                    display: block;
-                    padding: 12px 0;
-                    margin: 0 25px;
-                    transition: all 0.5s ease;
-
-                    &:hover {
-                        color: $secondary;
-                    }
-
-                    &.active {
-                        color: $secondary;
-                    }
-                }
-            }
+            height: 30vh;
 
             &.open {
                 right: 0;
-            }
-        }
-
-        .main {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .login-button {
-                padding: 6px 24px;
-                border: 2px solid $text-light;
-                color: $text-light;
-                transition: all 0.5s ease;
-                cursor: pointer;
-
-                a {
-                    color: $text-light;
-                }
-
-                &:hover {
-                    background-color: $secondary;
-                    color: $bg-dark;
-                }
-            }
-
-            #menu-icon {
-                display: block;
-                margin-left: 20px;
-                font-size: 35px;
-                color: $text-light;
-                cursor: pointer;
-                z-index: 1001;
             }
         }
     }
@@ -211,85 +133,27 @@ header {
 //Desktop view
 @media (min-width: 1100px) {
     header {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        right: 0;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: transparent;
         padding: 28px 12%;
         transition: all 0.5s ease;
 
-        .logo {
-            img {
-                height: 60px;
-            }
-        }
-
         .navbar {
-            display: flex;
             position: relative;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
             height: auto;
             right: auto;
-            margin: 0;
-            padding: 0;
             background-color: $bg-dark;
 
             li {
-                margin: 0 10px;
-
                 a {
-                    color: $text-light;
                     padding: 5px 0;
                     margin: 0 30px;
-                    transition: all 0.5s ease;
-
-                    &:hover {
-                        color: $secondary;
-                    }
-
-                    &.active {
-                        color: $secondary;
-                    }
                 }
             }
         }
 
         .main {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .login-button {
-                padding: 6px 24px;
-                border: 2px solid $text-light;
-                color: $text-light;
-                transition: all 0.5s ease;
-                cursor: pointer;
-
-                a {
-                    color: $text-light;
-                }
-
-                &:hover {
-                    background-color: $secondary;
-                    color: $bg-dark;
-                }
-            }
-
             #menu-icon {
                 display: none;
-                font-size: 35px;
-                color: $text-light;
-                cursor: pointer;
-                z-index: 1001;
             }
         }
     }
