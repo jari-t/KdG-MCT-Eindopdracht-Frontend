@@ -25,6 +25,7 @@ header {
   background: transparent;
   padding: 14px 5%;
   transition: all 0.2s ease;
+  background-color: #181818;
 }
 header .logo img {
   height: 60px;
@@ -91,6 +92,62 @@ header .main #menu-icon {
   z-index: 1001;
 }
 
+.hero {
+  margin-top: 152px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero .hero-content {
+  margin-bottom: 20px;
+  padding: 0 25vw;
+}
+.hero .hero-content h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1.25;
+}
+.hero .hero-content p {
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+}
+.hero .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+.hero .cta .btn {
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.hero .cta .btn-primary {
+  background-color: #4452FE;
+}
+.hero .cta .btn-primary:hover {
+  background-color: #02E4C0;
+}
+.hero .cta .btn-secondary {
+  border: 1px solid #fff;
+  background-color: #181818;
+}
+.hero .cta .btn-secondary:hover {
+  background-color: #02E4C0;
+}
+.hero .hero-image {
+  width: 100%;
+}
+.hero .hero-image img {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   header {
     padding: 18px 10%;
@@ -122,5 +179,31 @@ header .main #menu-icon {
   }
   header .main #menu-icon {
     display: none;
+  }
+  .hero {
+    margin-top: 205px;
+  }
+  .hero .hero-content {
+    padding: 0 30vw;
+  }
+  .hero .hero-content h1 {
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .hero .hero-content p {
+    padding: 20px;
+  }
+  .hero .cta {
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    margin: 30px;
+  }
+  .hero .hero-image {
+    width: 100%;
+  }
+  .hero .hero-image img {
+    width: 100%;
   }
 }
