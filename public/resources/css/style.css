@@ -343,6 +343,50 @@ header .main #menu-icon {
   width: 100%;
 }
 
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials__header {
+  margin-bottom: 40px;
+  padding: 0 20vw;
+  text-align: center;
+}
+.testimonials .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.testimonials .cards .card {
+  width: 60%;
+  background-color: #181818;
+  border-radius: 10px;
+  padding: 40px;
+  color: #fff;
+  border: 1px solid #565656;
+  line-height: 1.5em;
+}
+.testimonials .cards .card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.testimonials .cards .card__header__image {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.testimonials .cards .card__header__image img {
+  width: 100%;
+}
+.testimonials .cards .card__header__text {
+  margin-left: 15px;
+  font-weight: 500;
+}
+
 @media (min-width: 768px) {
   header {
     padding: 18px 10%;
