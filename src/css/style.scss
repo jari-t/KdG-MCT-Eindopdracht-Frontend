@@ -420,40 +420,47 @@ header {
         text-align: center;
     }
 
-    .cards {
+    &__body {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 25px;
 
-        .card {
-            width: 60%;
-            background-color: $bg-dark;
-            border-radius: 10px;
-            padding: 40px;
-            color: $text-light;
-            border: 1px solid #565656;
-            line-height: 1.5em;
+        .cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
 
-            &__header {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-bottom: 30px;
+            .card {
+                width: 60%;
+                background-color: $bg-dark;
+                border-radius: 10px;
+                padding: 40px;
+                color: $text-light;
+                border: 1px solid #565656;
+                line-height: 1.5em;
 
-                &__image {
-                    width: 15%;
+                &__header {
                     display: flex;
+                    flex-direction: row;
                     align-items: center;
+                    margin-bottom: 30px;
 
-                    img {
-                        width: 100%;
+                    &__image {
+                        width: 15%;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 100%;
+                        }
                     }
-                }
 
-                &__text {
-                    margin-left: 15px;
-                    font-weight: 500;
+                    &__text {
+                        margin-left: 15px;
+                        font-weight: 500;
+                    }
                 }
             }
         }
@@ -657,6 +664,29 @@ header {
 
             .item {
                 width: 8%;
+            }
+        }
+    }
+
+    .testimonials {
+        &__header {
+            padding: 0 30vw;
+        }
+
+        &__body {
+            flex-direction: row;
+            justify-content: center;
+            align-items: initial;
+            width: calc(60% + 25px);
+            gap: initial;
+
+            .cards {
+                justify-content: flex-start;
+                width: 100%;
+
+                .card {
+                    width: calc(100% - 25px);
+                }
             }
         }
     }
