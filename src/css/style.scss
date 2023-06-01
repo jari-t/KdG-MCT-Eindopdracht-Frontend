@@ -597,38 +597,15 @@ header {
     }
 
     .partners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
         &__header {
-            margin-bottom: 40px;
             padding: 0 30vw;
-            text-align: center;
-
-            p {
-                text-align: center;
-                padding: 10px;
-                line-height: 1.5em;
-            }
         }
 
         &__content {
-            display: flex;
-            flex-direction: row;
             flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 35px;
-            margin-bottom: 40px;
-            width: 60%;
 
             .item {
                 width: 8%;
-
-                img {
-                    width: 100%;
-                }
             }
         }
     }

@@ -479,35 +479,13 @@ header .main #menu-icon {
     width: auto;
     border-radius: 12px;
   }
-  .partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .partners__header {
-    margin-bottom: 40px;
     padding: 0 30vw;
-    text-align: center;
-  }
-  .partners__header p {
-    text-align: center;
-    padding: 10px;
-    line-height: 1.5em;
   }
   .partners__content {
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 35px;
-    margin-bottom: 40px;
-    width: 60%;
   }
   .partners__content .item {
     width: 8%;
-  }
-  .partners__content .item img {
-    width: 100%;
   }
 }
