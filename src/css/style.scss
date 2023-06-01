@@ -359,7 +359,7 @@ header {
 
         .item {
             width: 60%;
-            
+
             img {
                 width: 100%;
                 border-radius: 12px;
@@ -369,6 +369,43 @@ header {
 
     &__content--desktop {
         display: none;
+    }
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        margin-bottom: 40px;
+        padding: 0 20vw;
+        text-align: center;
+
+        p {
+            text-align: center;
+            padding: 10px;
+            line-height: 1.5em;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+        margin-bottom: 40px;
+        width: 60%;
+
+        .item {
+            width: 20%;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -531,11 +568,11 @@ header {
         &__header {
             padding: 0 30vw;
         }
-    
+
         &__content--mobile {
             display: none;
         }
-    
+
         &__content--desktop {
             display: flex;
             flex-wrap: wrap;
@@ -554,6 +591,43 @@ header {
                     height: 100%;
                     width: auto;
                     border-radius: 12px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__header {
+            margin-bottom: 40px;
+            padding: 0 30vw;
+            text-align: center;
+
+            p {
+                text-align: center;
+                padding: 10px;
+                line-height: 1.5em;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+            margin-bottom: 40px;
+            width: 60%;
+
+            .item {
+                width: 8%;
+
+                img {
+                    width: 100%;
                 }
             }
         }
