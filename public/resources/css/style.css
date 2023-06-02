@@ -9,6 +9,11 @@
 
 body {
   min-height: 100vh;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
   background-color: #181818;
   color: #fff;
 }
@@ -134,7 +139,7 @@ header .main #menu-icon {
 }
 .hero__content {
   margin-bottom: 20px;
-  padding: 0 20vw;
+  padding: 0 20%;
 }
 .hero__content p {
   text-align: center;
@@ -417,6 +422,66 @@ header .main #menu-icon {
   width: 100%;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 75px;
+  width: 60%;
+  margin: 100px 0 100px 0;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 75px;
+  line-height: 1.5em;
+}
+.footer__nav__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.footer__nav__column ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer__nav__column ul li a {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.footer__nav__column ul li a:hover {
+  color: #02E4C0;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer__contact__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer__contact__info img {
+  width: 35px;
+  margin-right: 5px;
+}
+.footer__contact__socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.footer__contact__socials a img {
+  width: 40px;
+}
+
 @media (min-width: 768px) {
   header {
     padding: 18px 10%;
@@ -456,9 +521,6 @@ header .main #menu-icon {
   }
   .hero {
     margin-top: 205px;
-  }
-  .hero__content {
-    padding: 0 30vw;
   }
   .hero__content p {
     padding: 20px;
@@ -541,7 +603,7 @@ header .main #menu-icon {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    width: 75%;
+    width: 80%;
     margin-bottom: 40px;
   }
   .gallery__content--desktop .item {
@@ -616,5 +678,14 @@ header .main #menu-icon {
     position: absolute;
     width: 100%;
     top: 50px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .footer__nav {
+    flex-direction: row;
+    gap: 100px;
   }
 }
