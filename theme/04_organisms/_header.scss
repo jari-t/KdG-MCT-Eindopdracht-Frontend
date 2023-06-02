@@ -1,0 +1,121 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 14px 5%;
+    transition: all 0.2s ease;
+    background-color: $dark;
+
+    .logo {
+        img {
+            height: 60px;
+        }
+    }
+
+
+    .navbar {
+        display: flex;
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        height: 29vh;
+        background-color: $primary;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 0.5s ease;
+
+        li {
+            margin: 0 10px;
+
+            a {
+                display: block;
+                padding: 12px 0;
+                margin: 0 25px;
+                transition: all 0.5s ease;
+                color: $light;
+
+                &:hover {
+                    color: $secondary;
+                }
+
+                &.active {
+                    color: $secondary;
+                }
+            }
+        }
+
+        &.open {
+            right: 0;
+        }
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #menu-icon {
+            display: block;
+            margin-left: 20px;
+            font-size: 35px;
+            color: $light;
+            cursor: pointer;
+            z-index: 1001;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 18px 10%;
+        transition: all 0.2s ease;
+
+        .navbar {
+            width: 40%;
+            height: 30vh;
+
+            &.open {
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    header {
+        padding: 28px 12%;
+        transition: all 0.5s ease;
+
+        .navbar {
+            position: relative;
+            flex-direction: row;
+            height: auto;
+            right: auto;
+            background-color: $dark;
+
+            li {
+                a {
+                    padding: 5px 0;
+                    margin: 0 30px;
+                }
+            }
+        }
+
+        .main {
+            #menu-icon {
+                display: none;
+            }
+        }
+    }
+}
